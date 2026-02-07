@@ -8,22 +8,49 @@ The goal is to understand the key factors influencing rental prices and develop 
 
 ---
 
+## Key Results
+
+* Final Model: **Tuned Random Forest**
+* **R²:** 0.865
+* **MAE:** ₹15,800
+* **RMSE:** ₹40,000
+* Cross-validation Mean R²: ~0.79
+
+The model explains **86% of the variance** in rental prices and identifies **property size and location** as the primary drivers.
+
+---
+
+## Highlights
+
+* End-to-end machine learning workflow
+* Extensive data cleaning and feature engineering
+* Exploratory data analysis with visual insights
+* Multiple model development and comparison
+* Cross-validation for model stability
+* Hyperparameter tuning
+* Feature importance and business interpretation
+
+---
+
 ## Problem Statement
 
 Rental prices in metropolitan cities vary significantly due to multiple factors such as property size, number of bedrooms, furnishing level, and location.
+
 This project aims to:
 
 * Analyze rental data for Mumbai
-* Identify the main drivers of rental prices
-* Build and evaluate multiple regression models
-* Select the best-performing model based on predictive performance
+* Identify key price drivers
+* Build predictive models
+* Select the best-performing model based on accuracy and stability
 
 ---
 
 ## Dataset
 
-Source: Kaggle
-The original dataset contained rental listings for multiple cities (Mumbai, Pune, Delhi).
+**Source:** Kaggle
+**Dataset Size:** ~5,000 Mumbai rental listings
+
+The original dataset contained multiple cities (Mumbai, Pune, Delhi).
 This project focuses only on **Mumbai** to capture city-specific rental dynamics.
 
 ### Features Used
@@ -42,7 +69,7 @@ This project focuses only on **Mumbai** to capture city-specific rental dynamics
 ### 1. Data Cleaning & Preparation
 
 * Removed irrelevant and high-missing columns
-* Extracted numerical features from text fields
+* Extracted numerical values from text features
 * Handled missing values
 * Standardized column names
 * One-hot encoded furnishing status (Unfurnished as baseline)
@@ -51,38 +78,60 @@ This project focuses only on **Mumbai** to capture city-specific rental dynamics
 
 ### 2. Exploratory Data Analysis
 
-Key findings:
+Key observations:
 
 * Rental prices are **right-skewed**
-* Strong relationship between price and:
+* Strong relationships with:
 
   * Property size
   * BHK
   * Bathrooms
   * Location
-* Furnishing has relatively smaller impact
+* Furnishing has relatively small impact
 * Clear geographic clustering of high-value areas
 
 ---
 
-### 3. Model Development
+## Sample Visualizations
 
-#### Linear Regression (Baseline)
+
+
+### Price Distribution
+
+<img width="1246" height="470" alt="image" src="https://github.com/user-attachments/assets/182058c8-fc2b-4ad8-83e5-022430d92baf" />
+
+
+### Actual vs Predicted
+
+<img width="700" height="547" alt="image" src="https://github.com/user-attachments/assets/226a6933-97e3-48a4-863f-60cf3e624fdc" />
+
+### Feature Importance
+
+<img width="825" height="470" alt="image" src="https://github.com/user-attachments/assets/f7a0e6ab-a6a6-4fd1-9c79-c6c0d09ba76a" />
+
+### Price vs House Size 
+<img width="691" height="393" alt="image" src="https://github.com/user-attachments/assets/274e1305-5144-4eac-b8b4-8b093a45743a" />
+
+
+---
+
+## Model Development
+
+### Linear Regression (Baseline)
 
 * R² ≈ 0.72
-* Underfitting observed due to non-linear relationships
+* Underfitting due to non-linear relationships
 
-#### Random Forest
+### Random Forest
 
-* Significant improvement
 * R² ≈ 0.86
 
-#### Cross-Validation
+### Cross-Validation
 
 * Mean CV R² ≈ 0.79
 * Confirms model stability and generalization
 
-#### Hyperparameter Tuning
+### Hyperparameter Tuning
 
 Best parameters:
 
@@ -91,17 +140,28 @@ Best parameters:
 * min_samples_split = 2
 * min_samples_leaf = 1
 
-Final Performance:
+**Final Performance**
 
-* **R²: 0.865**
-* **MAE: ~₹15,800**
-* **RMSE: ~₹40,000**
+* R²: **0.865**
+* MAE: ~₹15,800
+* RMSE: ~₹40,000
 
-#### Gradient Boosting
+### Gradient Boosting
 
 Tested but did not outperform Random Forest.
 
-**Final Model: Tuned Random Forest**
+---
+
+## Model Comparison
+
+| Model               | R²        |
+| ------------------- | --------- |
+| Linear Regression   | 0.72      |
+| Random Forest       | 0.86      |
+| Tuned Random Forest | **0.865** |
+| Gradient Boosting   | 0.85      |
+
+**Final Model:** Tuned Random Forest
 
 ---
 
@@ -118,22 +178,19 @@ Tested but did not outperform Random Forest.
 
 ### Key Insights
 
-* **Property size** is the strongest driver of rent
-* **Location** has major influence (~32% combined)
+* **Property size** is the strongest driver
+* **Location** contributes ~32% combined
 * Bathrooms and BHK have moderate impact
 * Furnishing status has minimal effect
 
 ---
 
-## Business Insights
+## Business Applications
 
-Rental pricing in Mumbai is primarily driven by:
-
-1. Property size
-2. Geographic location
-3. Structural features
-
-Furnishing level plays a secondary role compared to size and location.
+* Rental price estimation for real estate platforms
+* Pricing guidance for property owners
+* Market analysis for investors
+* Fair rent benchmarking for tenants
 
 ---
 
@@ -165,10 +222,13 @@ Including these features could further improve performance.
 ```
 Mumbai-Rent-Prediction/
 │
-├── │ mumbai_rent_prediction.ipynb
+├── mumbai_rent_prediction.ipynb
 │
-├──  raw/
-│       └── mumbai.csv   
+├── raw/
+│     └── mumbai.csv (optional)
+│
+├── images/
+│   └── visualization files
 │
 └── README.md
 ```
@@ -186,4 +246,5 @@ This project demonstrates a complete end-to-end machine learning workflow:
 * Cross-validation and tuning
 * Feature importance and business interpretation
 
-The final Random Forest model provides strong predictive performance and actionable insights into rental price drivers.
+The final tuned Random Forest model provides strong predictive performance and actionable insights into the key factors influencing rental prices in Mumbai.
+
