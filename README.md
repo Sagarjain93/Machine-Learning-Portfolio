@@ -19,22 +19,23 @@ I am currently preparing for roles in:
 
 ## Repository Structure
 
+```
 machine-learning-portfolio/
 
 │
-├── **01_End_to_End**
+├── 01_End_to_End
 │   Production-style Machine Learning projects
 │   Includes modular code, data pipelines, model training, and evaluation
 
-├── **02_ML_Projects**
+├── 02_ML_Projects
 │   Finalized and portfolio-ready Machine Learning projects
 │   Focus on EDA, Feature Engineering, Modeling, and Business Insights
-│   ⭐ *Primary section for resume and project showcase*
+│   ⭐ Primary section for resume and project showcase
 
-├── **03_ML_Practice**
+├── 03_ML_Practice
 │   Practice notebooks, experiments, and concept implementations
 │   Selected projects are refined and moved to 02_ML_Projects
-
+```
 ---
 
 ## Portfolio Workflow
