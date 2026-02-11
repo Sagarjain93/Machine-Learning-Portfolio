@@ -39,7 +39,7 @@ Each project typically follows this approach:
 ---
 
 ## Folder Structure (Typical Project)
-
+```
 project_name/
 
 │
@@ -47,7 +47,7 @@ project_name/
 ├── dataset (if small) / dataset link
 ├── images/ (plots or visualizations)
 ├── README.md
-
+```
 ---
 
 ## What These Projects Demonstrate
