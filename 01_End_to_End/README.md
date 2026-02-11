@@ -24,10 +24,11 @@ An End-to-End Machine Learning project includes:
 
 ---
 
-## Folder Structure (Typical Project)
+## Folder Structure 
 
 Each project inside this folder follows a structure like:
 
+```
 project_name/
 
 │
@@ -51,6 +52,7 @@ project_name/
 ├── requirements.txt
 ├── README.md
 
+```
 ---
 
 ## What These Projects Demonstrate
