@@ -94,6 +94,22 @@ This section highlights my ability to:
 
 ---
 
+## Related Sections in This Portfolio
+
+* **02_ML_Projects**
+  Contains finalized Machine Learning projects with EDA, modeling, and business insights.
+  This is the primary portfolio section for project demonstrations.
+
+* **03_ML_Practice**
+  Contains learning experiments, practice notebooks, and concept implementations.
+  Selected projects from this folder are refined and moved to 02_ML_Projects.
+
+---
+
+This folder (**01_End_to_End**) focuses specifically on production-style, modular machine learning pipelines and industry-level project structure.
+
+---
+
 ## Author
 
 **Sagar Jain**
