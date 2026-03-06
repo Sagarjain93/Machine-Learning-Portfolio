@@ -101,9 +101,13 @@ Key insights identified torque, tool wear, and failure indicators as strong pred
 Key steps:
 
 ✔ Label Encoding for categorical variables
+
 ✔ Log Transformation to reduce skewness
+
 ✔ StandardScaler for feature scaling
+
 ✔ SMOTE for handling class imbalance
+
 ✔ Correlation-based dimensionality reduction
 
 
@@ -145,6 +149,7 @@ Models were evaluated using:
 Because this is a failure detection problem, the most important metrics are:
 
 ✔ **F1 Score
+
 ✔ Recall**
 
 These metrics ensure failures are detected while minimizing false alarms.
@@ -155,41 +160,55 @@ These metrics ensure failures are detected while minimizing false alarms.
 
 The LightGBM model with hyperparameter tuning achieved the best performance.
 
-Metric	Score
-Accuracy	0.993
-Precision	0.762
-Recall	0.812
-F1 Score	0.786
-ROC-AUC	0.950
-Why LightGBM?
+| Metric    | Score     |
+| --------- | --------- |
+| Accuracy  | 0.993     |
+| Precision | 0.762     |
+| Recall    | 0.812     |
+| F1 Score  | **0.786** |
+| ROC-AUC   | 0.950     |
 
-Highest F1 Score
+---
 
-Strong precision-recall balance
+**Why LightGBM?**
 
-Efficient training
+*  Highest F1 Score
 
-Excellent performance on structured datasets
+*  Strong precision-recall balance
 
-🔍 Model Explainability
+*  Efficient training
+
+*  Excellent performance on structured datasets
+
+---
+
+🔍 **Model Explainability**
 
 Feature importance analysis revealed the most influential variables:
 
 🔹 HDF (Heat Dissipation Failure)
+
 🔹 OSF (Overstrain Failure)
+
 🔹 PWF (Power Failure)
+
 🔹 TWF (Tool Wear Failure)
+
 🔹 Torque
+
 🔹 Tool Wear
 
 These parameters represent critical indicators of machine stress and operational risk.
 
-🚀 Model Deployment Capability
+---
+
+🚀 **Model Deployment Capability**
 
 The trained model was saved using joblib for future deployment.
 
 Example workflow:
 
+```
 Load Model
       ↓
 Input Sensor Data
@@ -198,9 +217,15 @@ Predict Machine Failure
       ↓
 Trigger Maintenance Alert
 
+```
+
 This demonstrates how the model can be integrated into predictive maintenance systems.
 
-📂 Project Structure
+---
+
+📂 **Project Structure**
+
+```
 Machine-Failure-Prediction
 │
 ├── data
@@ -217,50 +242,67 @@ Machine-Failure-Prediction
 │   └── visualizations
 │
 └── README.md
-🛠️ Technologies Used
+```
 
-Python
+---
 
-Pandas
+🛠️ **Technologies Used**
 
-NumPy
+*  Python
 
-Scikit-learn
+*  Pandas
 
-XGBoost
+*  NumPy
 
-LightGBM
+*  Scikit-learn
 
-Matplotlib
+*  XGBoost
 
-Seaborn
+*  LightGBM
 
-📌 Business Impact
+*  Matplotlib
+
+*  Seaborn
+
+---
+
+📌 **Business Impact**
 
 The predictive maintenance system helps industries:
 
 ✔ Prevent unexpected machine breakdowns
+
 ✔ Reduce production downtime
+
 ✔ Lower maintenance costs
+
 ✔ Improve machine reliability
+
 ✔ Enable data-driven maintenance decisions
 
-🔮 Future Improvements
+---
+
+🔮 **Future Improvements**
 
 Potential enhancements:
 
-Real-time monitoring using IoT sensors
+*  Real-time monitoring using IoT sensors
 
-Model deployment using REST APIs
+*  Model deployment using REST APIs
 
-Continuous model retraining with streaming data
+*  Continuous model retraining with streaming data
 
-Integration with industrial monitoring systems
+*  Integration with industrial monitoring systems
 
-👨‍💻 Author
+---
+
+👨‍💻 **Author**
 
 Sagar Jain
 
+
 Machine Learning | Data Science | Predictive Analytics
+
+---
 
 ⭐ If you find this project useful, consider starring the repository.
