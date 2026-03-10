@@ -1,4 +1,4 @@
-<img width="790" height="590" alt="08_review_length_vs_rating" src="https://github.com/user-attachments/assets/0b80fdef-7c2a-4304-ae73-1a41899d8d7b" /><img width="790" height="590" alt="08_review_length_vs_rating" src="https://github.com/user-attachments/assets/01517e0a-27db-405b-9a11-dc5a9d0890ca" /># **🍽️ Zomato Restaurant Clustering & Customer Behavior Analysis**
+# **🍽️ Zomato Restaurant Clustering & Customer Behavior Analysis**
 
 **📌 Project Overview**
 
