@@ -39,7 +39,8 @@ The main objectives of this project were:
 The dataset consists of two main components:
 
 **1️⃣ Restaurant Metadata**
-``
+
+```
 Feature	Description
 Restaurant	
 Restaurant Name
@@ -51,7 +52,7 @@ avg_review_length
 Average length of reviews
 cost	
 Average cost for two people
-``
+```
 
 
 **2️⃣ Customer Reviews**
@@ -163,7 +164,7 @@ Three clustering models were implemented and compared:
 **Model	Silhouette Score**
 
 1. KMeans	**0.2168**
-2. Hierarchical Clustering	**0.5566**
+2. Hierarchical Clustering	**0.476**
 3. Gaussian Mixture Model	**0.4457**
 
 **The Agglomerative Hierarchical Clustering model achieved the best performance.**
@@ -172,13 +173,22 @@ Three clustering models were implemented and compared:
 
 **📈 Clustering Visualizations**
 
-<img width="833" height="542" alt="image" src="https://github.com/user-attachments/assets/abf8ddf6-e9f1-4ffc-b608-d83740fec766" />
+<img width="627" height="470" alt="image" src="https://github.com/user-attachments/assets/7469ed4b-4033-45e1-8eb8-55e8c2f6db36" />
 
-<img width="1156" height="451" alt="image" src="https://github.com/user-attachments/assets/1e590dbc-0ab5-4373-ae94-3e2803aa12ba" />
+<img width="841" height="542" alt="image" src="https://github.com/user-attachments/assets/c0126386-4c12-4f1e-89ca-74f3a5bfb16a" />
 
-<img width="695" height="465" alt="image" src="https://github.com/user-attachments/assets/6282aaf6-5457-42ff-b177-0135c2a83ea0" />
+<img width="671" height="547" alt="image" src="https://github.com/user-attachments/assets/bb0714f3-e33d-467d-88b6-a228b84f014a" />
 
-<img width="671" height="547" alt="image" src="https://github.com/user-attachments/assets/449c2267-d4a7-431e-9230-b81239fd1648" />
+<img width="1156" height="451" alt="image" src="https://github.com/user-attachments/assets/ec5e1a51-439e-4218-a168-796303f7ffe4" />
+
+<img width="704" height="465" alt="image" src="https://github.com/user-attachments/assets/05b7bbb6-d921-4a80-9781-ad520898aca0" />
+
+
+<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/62959dba-4bac-45d3-8cf3-a90c848f7481" />
+
+<img width="704" height="470" alt="image" src="https://github.com/user-attachments/assets/c8596c4e-5feb-4230-ba56-0098c2db37fd" />
+
+<img width="695" height="470" alt="image" src="https://github.com/user-attachments/assets/c1d84d2b-041f-4042-ad06-9e710b3e14b5" />
 
 ---
 
