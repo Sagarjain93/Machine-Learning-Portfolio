@@ -1,13 +1,9 @@
 # **🏭 Tata Steel Machine Failure Prediction**
 Predictive Maintenance using Machine Learning
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f9d3afe9-7a54-4970-9a6b-18d36371f7a7" />
 
-
-
-
-
-
-
+---
 
 📌 **Project Overview**
 
