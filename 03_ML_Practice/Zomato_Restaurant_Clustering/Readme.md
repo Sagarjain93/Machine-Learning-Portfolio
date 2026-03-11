@@ -1,5 +1,8 @@
 # **🍽️ Zomato Restaurant Clustering & Customer Behavior Analysis**
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0546521e-d39e-47d2-b0c6-5b19a3b02f1b" />
+
+
 **📌 Project Overview**
 
 The restaurant industry in India has seen rapid growth, with thousands of restaurants listed on platforms such as Zomato. With such a large number of options, it becomes difficult for both customers and businesses to understand restaurant performance patterns.
