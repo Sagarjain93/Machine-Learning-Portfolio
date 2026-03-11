@@ -1,5 +1,10 @@
 # Mumbai Rent Price Prediction
 
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cbbae9ac-ab2d-4b3e-b566-9409d08eda62" />
+
+---
+
 ## Overview
 
 This project builds a machine learning model to predict residential rental prices in Mumbai based on property characteristics and geographic location.
