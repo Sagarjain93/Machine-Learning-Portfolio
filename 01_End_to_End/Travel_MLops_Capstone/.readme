@@ -1,1 +1,17 @@
 
+# Travel & Tourism MLOps Capstone Project
+
+End-to-End MLOps Capstone Project for Travel and Tourism.
+
+This project includes:
+- Flight Price Prediction
+- Gender Classification
+- Hotel Recommendation
+- Flask REST API
+- Docker
+- Kubernetes
+- Airflow
+- Jenkins CI/CD
+- MLflow
+- Streamlit
+- Monitoring
